@@ -5,6 +5,14 @@
 //@import '~@angular/material/prebuilt-themes/purple-green.css';
 //@import '~@angular/material/prebuilt-themes/pink-bluegrey.css';
 
+html {
+   height: 100%;
+}
+
+body {
+   min-height: 100%;
+}
+
 .spacer {
 	flex: 1 1 auto;
 }
@@ -15,4 +23,36 @@
 
 * {
 	box-sizing: border-box;
+}
+
+.app-container {
+	height: 100vh;
+}
+
+.app-ws {
+	height: 100%;
+	margin-top: -64px;
+	padding-top: 64px;
+}
+
+.footer {
+	margin-top: -40px;
+	height: 40px;
+	background-color: #ccc;
+	position: relative;
+
+	div {
+		top: 50%;
+    position: absolute;
+    margin-top: -8px;
+		left: 50%;
+    margin-left: -30px;
+	}
+}
+.not-found-page {
+	font-weight: bold;
+	font-size: 3em;
+	color: #999;
+	text-align: center;
+	padding-top: 20px;
 }
