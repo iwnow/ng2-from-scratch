@@ -5,15 +5,18 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import 'hammerjs';
 
 import { AppComponent } from './app.component';
+import { Page404Component } from './pages';
+import { AppRouterModule } from './app.router.module';
 
 @NgModule({
 	declarations: [
-		AppComponent
+		AppComponent,
+		Page404Component
 	],
 	imports: [
-		BrowserModule,
 		BrowserAnimationsModule,
-		MaterialModule
+		MaterialModule,
+		AppRouterModule
 	],
 	providers: [],
 	bootstrap: [AppComponent]
