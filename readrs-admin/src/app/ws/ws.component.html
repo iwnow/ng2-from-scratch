@@ -1,27 +1,61 @@
-<md-toolbar color="primary" class="toolbar-header">
-	<span>Readrs Admin</span>
-	<span class="spacer"></span>
-	<button md-raised-button color="accent" (click)="test()">Rised</button>
-	<button md-icon-button [mdMenuTriggerFor]="menu">
-		<md-icon>more_vert</md-icon>
-	</button>
-	<md-menu #menu="mdMenu">
-		<button md-menu-item>
-			<md-icon>fingerprint</md-icon>
-			<span>Login</span>
-		</button>
-		<button md-menu-item disabled>
-			<md-icon>announcement</md-icon>
-			<span>Issues</span>
-		</button>
-		<button md-menu-item>
-			<md-icon>notifications_off</md-icon>
-			<span>Alerts</span>
-		</button>
-	</md-menu>
-</md-toolbar>
+<div class="ws-container">
+	<div class="ws-header">
+		<md-toolbar color="primary" class="toolbar-header">
+			<button color="accent" md-icon-button (click)="sidenav.toggle()">
+					<md-icon class="md-24" >menu</md-icon>
+			</button>
+			<!--<span class="ws-header-title">Readrs Admin</span>-->
+			<span class="spacer"></span>
+			<button md-raised-button color="accent" (click)="test()">Rised</button>
+			<button md-icon-button [mdMenuTriggerFor]="menu">
+				<md-icon>more_vert</md-icon>
+			</button>
+			<md-menu #menu="mdMenu">
+				<button md-menu-item>
+					<md-icon>fingerprint</md-icon>
+					<span>Login</span>
+				</button>
+				<button md-menu-item disabled>
+					<md-icon>announcement</md-icon>
+					<span>Issues</span>
+				</button>
+				<button md-menu-item>
+					<md-icon>notifications_off</md-icon>
+					<span>Alerts</span>
+				</button>
+			</md-menu>
+		</md-toolbar>
+	</div>
+	<div class="ws-body">
+		<md-sidenav-container class="ws-nav-container">
+    	<md-sidenav #sidenav mode="side" opened="true" class="ws-nav-side">
+				<md-nav-list>
+					<md-list-item>
+						<a routerLink="">Balance</a>
+						<md-icon md-list-icon>monetization_on</md-icon>
+					</md-list-item>
+					<md-divider></md-divider>
+					<md-list-item>
+						<a routerLink="">Products</a>
+						<md-icon md-list-icon>view_list</md-icon>
+					</md-list-item>
+					<md-divider></md-divider>
+					<md-list-item>
+						<a routerLink="">Orders</a>
+						<md-icon md-list-icon>reorder</md-icon>
+					</md-list-item>
+					<md-divider></md-divider>
+				</md-nav-list>
+			</md-sidenav>
+    	<div class="ws-nav-content">
+				<router-outlet></router-outlet>
+			</div>
+  	</md-sidenav-container>
+	</div>
+</div>
+<!--
 <md-tab-group>
   <md-tab label="Tab 1">Content 1</md-tab>
   <md-tab label="Tab 2">Content 2</md-tab>
 </md-tab-group>
-<router-outlet></router-outlet>
+<router-outlet></router-outlet>-->

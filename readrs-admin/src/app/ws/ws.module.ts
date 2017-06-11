@@ -6,10 +6,11 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { WorkspaceComponent } from './ws.component';
 import { WorkspaceRouterModule } from './ws.router.module'; 
+import { SharedModule } from '../shared/shared.module';
 
 @NgModule({
 	imports: [
-		CommonModule,
+		SharedModule,
 		MaterialModule,
 		WorkspaceRouterModule
 	],
