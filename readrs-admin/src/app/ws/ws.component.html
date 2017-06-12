@@ -1,12 +1,12 @@
 <div class="ws-container">
 	<div class="ws-header">
 		<md-toolbar color="primary" class="toolbar-header">
-			<button color="accent" md-icon-button (click)="sidenav.toggle()">
+			<button md-icon-button (click)="sidenav.toggle()">
 					<md-icon class="md-24" >menu</md-icon>
 			</button>
 			<!--<span class="ws-header-title">Readrs Admin</span>-->
 			<span class="spacer"></span>
-			<button md-raised-button color="accent" (click)="test()">Rised</button>
+			<!--<button md-raised-button color="accent" (click)="test()">Rised</button>-->
 			<button md-icon-button [mdMenuTriggerFor]="menu">
 				<md-icon>more_vert</md-icon>
 			</button>
@@ -46,6 +46,7 @@
 					</md-list-item>
 					<md-divider></md-divider>
 				</md-nav-list>
+				
 			</md-sidenav>
     	<div class="ws-nav-content">
 				<router-outlet></router-outlet>
