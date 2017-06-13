@@ -3,7 +3,16 @@ import { Route, RouterModule } from '@angular/router';
 import { WorkspaceComponent } from './ws.component'; 
 
 const routes: Route[] = [
-	{ path: '', pathMatch: 'full', component: WorkspaceComponent }
+	{ 
+		path: '', 
+		component: WorkspaceComponent,
+		children: [
+			{
+				path: 'products',
+				loadChildren: './products/products.module#ProductsModule'
+			}
+		]
+	}
 ];
 
 @NgModule({
