@@ -5,8 +5,8 @@ import { Page404Component } from './pages';
 
 const routes: Route[] = [
 	{ path: '', redirectTo: 'ws', pathMatch: 'full' },
-	{ path: 'ws', loadChildren: './ws/ws.module#WorkspaceModule' },
-	{ path: 'auth', loadChildren: './auth/auth.module#AuthModule' },
+	// { path: 'ws', loadChildren: './ws/ws.module#WorkspaceModule' },
+	// { path: 'auth', loadChildren: './auth/auth.module#AuthModule' },
 	{ path: '**', component: Page404Component }
 ];
 

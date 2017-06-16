@@ -12,17 +12,17 @@ export class ProductsComponent {
 
   settings = {
     add: {
-      addButtonContent: '<i class="ion-ios-plus-outline"></i>',
-      createButtonContent: '<i class="ion-checkmark"></i>',
-      cancelButtonContent: '<i class="ion-close"></i>',
+      addButtonContent: '<i class="material-icons md-18">add_box</i>',
+      createButtonContent: '<i class="material-icons md-18">save</i>',
+      cancelButtonContent: '<i class="material-icons md-18">cancel</i>'
     },
     edit: {
-      editButtonContent: '<i class="ion-edit"></i>',
-      saveButtonContent: '<i class="ion-checkmark"></i>',
-      cancelButtonContent: '<i class="ion-close"></i>',
+      editButtonContent: '<i class="material-icons md-18">mode_edit</i>',
+      saveButtonContent: '<i class="material-icons md-18">save</i>',
+      cancelButtonContent: '<i class="material-icons md-18">close</i>',
     },
     delete: {
-      deleteButtonContent: '<i class="ion-trash-a"></i>',
+      deleteButtonContent: '<i class="material-icons md-18">delete</i>',
       confirmDelete: true
     },
     columns: {

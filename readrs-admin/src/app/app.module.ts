@@ -5,6 +5,8 @@ import { AppComponent } from './app.component';
 import { Page404Component } from './pages';
 import { AppRouterModule } from './app.router.module';
 
+import { WorkspaceModule } from './ws/ws.module';
+
 @NgModule({
 	declarations: [
 		AppComponent,
@@ -12,6 +14,7 @@ import { AppRouterModule } from './app.router.module';
 	],
 	imports: [
 		BrowserAnimationsModule,
+		WorkspaceModule,
 		AppRouterModule
 	],
 	providers: [],

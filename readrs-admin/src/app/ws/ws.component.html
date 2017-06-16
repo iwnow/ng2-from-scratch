@@ -5,6 +5,7 @@
 					<md-icon class="md-24" >menu</md-icon>
 			</button>
 			<!--<span class="ws-header-title">Readrs Admin</span>-->
+			
 			<span class="spacer"></span>
 			<!--<button md-raised-button color="accent" (click)="test()">Rised</button>-->
 			<button md-icon-button [mdMenuTriggerFor]="menu">
@@ -30,20 +31,26 @@
 		<md-sidenav-container class="ws-nav-container">
     	<md-sidenav #sidenav mode="side" opened="true" class="ws-nav-side">
 				<md-nav-list>
-					<md-list-item>
-						<a routerLink="">Balance</a>
-						<md-icon md-list-icon>monetization_on</md-icon>
-					</md-list-item>
+					<a routerLink="balance">
+						<md-list-item>
+							Balance
+							<md-icon md-list-icon>monetization_on</md-icon>
+						</md-list-item>
+					</a>
 					<md-divider></md-divider>
-					<md-list-item>
-						<a routerLink="products">Products</a>
-						<md-icon md-list-icon>view_list</md-icon>
-					</md-list-item>
+					<a routerLink="products">
+						<md-list-item>
+							Products
+							<md-icon md-list-icon>view_list</md-icon>
+						</md-list-item>
+					</a>
 					<md-divider></md-divider>
-					<md-list-item>
-						<a routerLink="">Orders</a>
-						<md-icon md-list-icon>reorder</md-icon>
-					</md-list-item>
+					<a routerLink="orders">
+						<md-list-item>
+							Orders
+							<md-icon md-list-icon>reorder</md-icon>
+						</md-list-item>
+					</a>
 					<md-divider></md-divider>
 				</md-nav-list>
 				
@@ -54,9 +61,3 @@
   	</md-sidenav-container>
 	</div>
 </div>
-<!--
-<md-tab-group>
-  <md-tab label="Tab 1">Content 1</md-tab>
-  <md-tab label="Tab 2">Content 2</md-tab>
-</md-tab-group>
-<router-outlet></router-outlet>-->

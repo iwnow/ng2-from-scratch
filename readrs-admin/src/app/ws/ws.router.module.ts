@@ -4,7 +4,7 @@ import { WorkspaceComponent } from './ws.component';
 
 const routes: Route[] = [
 	{ 
-		path: '', 
+		path: 'ws', 
 		component: WorkspaceComponent,
 		children: [
 			{
