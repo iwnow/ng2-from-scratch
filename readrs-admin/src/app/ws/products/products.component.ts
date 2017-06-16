@@ -30,25 +30,17 @@ export class ProductsComponent {
         title: 'ID',
         type: 'number'
       },
-      firstName: {
-        title: 'First Name',
+      name: {
+        title: 'Name',
         type: 'string'
       },
-      lastName: {
-        title: 'Last Name',
-        type: 'string'
+      create: {
+        title: 'Create',
+        type: 'date'
       },
-      username: {
-        title: 'Username',
-        type: 'string'
-      },
-      email: {
-        title: 'E-mail',
-        type: 'string'
-      },
-      age: {
-        title: 'Age',
-        type: 'number'
+      validTo: {
+        title: 'ValidTo',
+        type: 'date'
       }
     }
   };
