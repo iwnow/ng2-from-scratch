@@ -5,6 +5,10 @@
 //@import '~@angular/material/prebuilt-themes/purple-green.css';
 //@import '~@angular/material/prebuilt-themes/pink-bluegrey.css';
 
+@import '~@angular/material/theming';
+@include mat-core();
+
+
 html {
    height: 100%;
 }
@@ -20,6 +24,14 @@ body {
 
 * {
 	box-sizing: border-box;
+}
+
+.active {
+	md-list-item,
+	md-list-item:hover {
+		background-color: lightseagreen !important;
+	}
+	
 }
 
 /* Rules for sizing the icon. */
