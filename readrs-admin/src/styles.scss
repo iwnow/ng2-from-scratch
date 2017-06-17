@@ -5,9 +5,6 @@
 //@import '~@angular/material/prebuilt-themes/purple-green.css';
 //@import '~@angular/material/prebuilt-themes/pink-bluegrey.css';
 
-@import '~@angular/material/theming';
-@include mat-core();
-
 
 html {
    height: 100%;
@@ -29,7 +26,7 @@ body {
 .active {
 	md-list-item,
 	md-list-item:hover {
-		background-color: lightseagreen !important;
+		//background-color: ;
 	}
 	
 }
